@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophie Makianoor - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --dark-blue: #0f2b5b;
+        --darker-blue: #0a1c3d;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .bg-dark-blue {
+        background-color: var(--dark-blue) !important;
+      }
+      .text-dark-blue {
+        color: var(--dark-blue) !important;
+      }
+      .border-dark-blue {
+        border-color: var(--dark-blue) !important;
+      }
+      .btn-dark-blue {
+        background-color: var(--dark-blue);
+        color: white;
+        border: none;
+      }
+      .btn-dark-blue:hover {
+        background-color: var(--darker-blue);
+        color: white;
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .profile-pic {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border: 5px solid white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+      .btn-connect {
+        transition: all 0.3s ease;
+      }
+      .btn-connect:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top shadow"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Sophie's Portfolio</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#connect">Let's Connect</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="container text-center pt-5">
+      <div class="row align-items-center mt-5">
+        <div class="col-md-6 text-md-start mb-4 mb-md-0">
+          <p class="text-secondary fs-4 mb-1">Hello, I am</p>
+          <h1 class="display-4 fw-bold text-dark mb-3">Sophie Makianoor</h1>
+          <h2 class="h4 text-dark-blue mb-4">IT Enthusiast</h2>
+          <a href="#projects" class="btn btn-dark-blue btn-lg px-4 rounded-pill"
+            >View My Work</a
+          >
+        </div>
+        <div class="col-md-6 text-center">
+          <img
+            src="assets/Profile.jpg"
+            alt="Sophie Profile"
+            class="profile-pic rounded-circle"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-white">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4 text-dark-blue">About Me</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="lead text-secondary" style="line-height: 1.8">
+              I am an IT graduate from Institut Bisnis dan Informatika Kesatuan
+              and I am very interested in machine learning, computer vision,
+              robotics and user-centred design. During my studies, I have looked
+              at different technologies to create useful, engaging, and smart
+              solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2 class="fw-bold text-center mb-5 text-dark-blue">My Projects</h2>
+
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div
+            class="card h-100 shadow-sm border-0 border-bottom border-dark-blue border-3"
+          >
+            <img src="assets/Optima.png" class="card-img-top" alt="OPTIMA" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">OPTIMA</h5>
+              <p class="card-text text-muted">
+                A to-do list web app utilizing machine learning to automatically
+                prioritize tasks based on the user's mood and deadlines.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div
+            class="card h-100 shadow-sm border-0 border-bottom border-dark-blue border-3"
+          >
+            <img
+              src="assets/PotatoLeaf.png"
+              class="card-img-top"
+              alt="Potato Leaf Disease Detection"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Potato Leaf Disease Detection</h5>
+              <p class="card-text text-muted">
+                A Streamlit web application utilizing TensorFlow for computer
+                vision to detect plant diseases efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4">
+          <div
+            class="card h-100 shadow-sm border-0 border-bottom border-dark-blue border-3"
+          >
+            <img
+              src="assets/ColorFilter.png"
+              class="card-img-top"
+              alt="Color Filter Desktop App"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Color Filter Desktop App</h5>
+              <p class="card-text text-muted">
+                A desktop application developed for applying real-time color
+                filters using OpenCV and Tkinter.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-md-4">
+          <div
+            class="card h-100 shadow-sm border-0 border-bottom border-dark-blue border-3"
+          >
+            <img
+              src="assets/DocuDelivery.jpeg"
+              class="card-img-top"
+              alt="Document Delivery Robot"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Document Delivery Robot</h5>
+              <p class="card-text text-muted">
+                Served as the lead programmer for a collaborative class project,
+                developing the core operational code for this robot.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-md-4">
+          <div
+            class="card h-100 shadow-sm border-0 border-bottom border-dark-blue border-3"
+          >
+            <img
+              src="assets/TouriMap.png"
+              class="card-img-top"
+              alt="Touri Map"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">TouriMap</h5>
+              <p class="card-text text-muted">
+                Crafted user-centered UI/UX design for a local tourism platform
+                highlighting destinations like Goa Hawang.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-md-4">
+          <div
+            class="card h-100 shadow-sm border-0 border-bottom border-dark-blue border-3"
+          >
+            <img
+              src="assets/MangaKing.png"
+              class="card-img-top"
+              alt="Manga King"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Manga King</h5>
+              <p class="card-text text-muted">
+                Designed an intuitive and engaging user interface (UI/UX) for a
+                digital comic reading platform.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="connect" class="bg-dark-blue text-white text-center py-5">
+      <div class="container">
+        <h3 class="fw-bold mb-4">Let's Connect</h3>
+        <p class="mb-4">
+          Interested in working together or sharing ideas? Feel free to reach
+          out!
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 mb-4">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=sophiemknr@gmail.com"
+            target="_blank"
+            class="btn btn-outline-light px-4 py-2 btn-connect"
+          >
+            ✉️ Email Me
+          </a>
+          <a
+            href="https://wa.me/6281585666628"
+            target="_blank"
+            class="btn btn-light text-dark-blue px-4 py-2 border-0 btn-connect fw-bold"
+          >
+            💬 WhatsApp
+          </a>
+        </div>
+
+        <p class="text-white-50 small mb-0">&copy; 2026 Sophie Makianoor</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
